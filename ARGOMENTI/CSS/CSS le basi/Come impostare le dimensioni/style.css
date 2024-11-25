@@ -1,0 +1,21 @@
+div {
+    background-color: aquamarine;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*la viewport é la parte visibile di una pagina web*/
+
+/*molto spesso si combina la max-width e una width con percentuale*/
+
+/*1vh = 1% di altezza della viewport. corrisponde all'1% dell'altezza della viewport
+  1vw = 1% di larghezza della viewport. 

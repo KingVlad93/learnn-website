@@ -1,0 +1,40 @@
+/*.container {
+    width: 80%;
+    max-width: 1140px;
+    margin: 0 auto;
+}*/
+
+/* @media mediatype and (expressions) {
+    CSS-Code
+}/*
+
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: greenyellow;
+    }
+}*/
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .image image {
+    width: 100%;
+  }
+}

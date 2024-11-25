@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box; /* consente di specificare se le dimensioni di un elemento includono o meno i margini, i padding e il bordo*/
+    margin: 0; /*la distanza tra il bordo di un elemento e gli elementi adiacenti*/
+    padding: 0; /*utile per creare spazio intorno al box*/
+  }
+  
+  body {
+    background-color: #070514; /*definisce il colore di sfondo di un elemento*/
+    color: #ffffff; /*si applica a tutti gli elementi ed é ereditata. Significa che se si imposta il colore per un elemento esso sará ereditato da tutti gli elementi discendenti*/
+    font-family: sans-serif; /*tipo di carattere utilizzato*/
+    font-size: 100%; /*dimensione dei caratteri*/
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 48px; /*definisce la distanza tra il lato inferiore di un elemento e gli elementi adiacenti*/
+  }
+  
+  h1 {
+    font-size: 96px; /*dimensione dei caratteri*/
+    font-weight: 600; /*imposta il peso del carattere ad un valore maggiore (testo in grassetto(*/
+    line-height: 113px; /*specifica l'altezza di linea del testo. La spaziatura tra due linee di testo successivo*/
+  }
+  
+  h2 {
+    font-size: 60px; /*dimensione dei caratteri*/
+    font-weight: 600; /*imposta il peso del carattere ad un valore maggiore (testo in grassetto(*/
+    line-height: 75px; /*specifica l'altezza di linea del testo. La spaziatura tra due linee di testo successivo*/
+    text-transform: uppercase; /*serve a cambiare gli attributi del testo relativamente a tre aspetti: maiuscolo, miniscolo, prima lettera maiuscola*/
+  }
+  
+  h3 {
+    font-size: 48px; /*dimensione dei caratteri*/
+    font-weight: 600; /*imposta il peso del carattere ad un valore maggiore (testo in grassetto(*/
+    line-height: 56px; /*specifica l'altezza di linea del testo. La spaziatura tra due linee di testo successivo*/
+  }
+  
+  a {
+    font-size: 36px; /*dimensione dei caratteri*/
+    font-weight: 600; /*imposta il peso del carattere ad un valore maggiore (testo in grassetto(*/
+    line-height: 42px; /*specifica l'altezza di linea del testo. La spaziatura tra due linee di testo successivo*/
+    color: #ffffff; /*si applica a tutti gli elementi ed é ereditata. Significa che se si imposta il colore per un elemento esso sará ereditato da tutti gli elementi discendenti*/
+    text-decoration: none; /*imposta la decorazione (normale, sottolineato, barrato, sopralineato) del testo HTML*/
+    text-transform: uppercase; /*serve a cambiare gli attributi del testo relativamente a tre aspetti: maiuscolo, miniscolo, prima lettera maiuscola*/
+  }
+  
+  a:hover {
+    color: #beda10; /*si applica a tutti gli elementi ed é ereditata. Significa che se si imposta il colore per un elemento esso sará ereditato da tutti gli elementi discendenti*/
+  }
+  
+  p {
+      font-size: 24px; /*dimensione dei caratteri*/
+      margin-bottom: 16px; /*definisce la distanza tra il lato inferiore di un elemento e gli elementi adiacenti*/
+  }
+  
+  .button {
+    background-color: #8279bb; /*definisce il colore di sfondo di un elemento*/
+    color: #ffffff; /*si applica a tutti gli elementi ed é ereditata. Significa che se si imposta il colore per un elemento esso sará ereditato da tutti gli elementi discendenti*/
+    font-size: 18px; /*dimensione dei caratteri*/
+    font-weight: 600; /*imposta il peso del carattere ad un valore maggiore (testo in grassetto(*/
+    text-transform: uppercase; /*serve a cambiare gli attributi del testo relativamente a tre aspetti: maiuscolo, miniscolo, prima lettera maiuscola*/
+    padding: 12px 24px; /*utile per creare spazio intorno al box*/
+    border: none; /*definisce i bordi dell'elemento*/
+    border-radius: 36px; /*definisce l'arrotondamento dei bordi dell'elemento */
+  }
+  
+  .button:hover {
+    background-color: #beda10; /*definisce il colore di sfondo di un elemento*/
+    color: #070514; /*si applica a tutti gli elementi ed é ereditata. Significa che se si imposta il colore per un elemento esso sará ereditato da tutti gli elementi discendenti*/
+  }
+
+  .input-label {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .input-label span {
+    font-size: 18px;
+    font-weight: 400;
+  } 
+
+  .input-field, .input-textarea {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #757575;
+    background-color: #0E0062;
+    padding: 12px 16px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+
+  .input-textarea {
+    height: 100px;
+  }
+  
+  .container {
+    width: 80%; /*definisce la larghezza dell'area del contenuto di un box*/
+    margin-right: auto; /*definisce la distanza tra il lato destro di un elemento e gli elementi adiacenti*/
+    margin-left: auto; /*definisce la distanza tra il lato sinistro di un elemento e gli elementi adiacenti*/
+    max-width: 1140px; /*imposta la larghezza massima di un elemento*/
+  }
+  
+  section {
+    padding-top: 64px; /*Imposta l'ampiezza del padding sul lato superiore di un elemento*/
+    padding-bottom: 64px; /*Imposta l'ampiezza del padding sul lato inferiore di un elemento*/
+  }
+  
+  .hero {
+    height: 100vh; /*definisce l'altezza (la distanza tra il bordo superiore e quello inferiore di un elemento)*/
+    background: linear-gradient( /*un gradiente é un riempimento a colori che si fonde uniformemente da un colore all'altro*/
+      0deg,
+      rgba(7, 5, 20, 1) 0%,
+      rgba(16, 26, 98, 1) 31%
+    );
+  }
+  
+  .hero-content {
+    height: 100%; /*definisce l'altezza (la distanza tra il bordo superiore e quello inferiore di un elemento)*/
+    display: flex; /*é il valore della proprietá display con cui si imposta un contenitore flessibile*/
+    flex-direction: column; /*specifica la direzione dell'asse principale (main axis) su cui si dispongono i box flessibili nel contenitore*/
+    justify-content: center; /*serve ad allineare i box flessibili sull'asse del principale contenitore*/
+  }
+  
+  .hero-cta {
+    align-self: flex-end; /*consente di specificare per un singolo box l'allineamento sull'asse perpendicolare*/
+  }
+  
+  /* Header */
+  .header {
+    position: fixed; /*posizionamento assoluto o relativo degli elementi in una pagina web*/
+    top: 0; /*se abbinato a fixed o absolute definisce la distanza verticale rispetto al bordo superiore dell'elemento contenitore*/
+    left: 0; /*per gli elementi con posizione assoluta o fissa definisce la distanza dal bordo sinistro del box contenitore*/
+    width: 100%; /*definisce la larghezza dell'area del contenuto di un box*/
+    background: linear-gradient( /*un gradiente é un riempimento a colori che si fonde uniformemente da un colore all'altro*/
+    0deg,
+      180deg,
+      rgba(7, 5, 20, 1) 0%,
+      rgba(16, 26, 98, 0.16290266106442575) 31%
+    );
+  }
+  
+  .header-container {
+    display: flex; /*é il valore della proprietá display con cui si imposta un contenitore flessibile*/
+  }
+  
+  .logo {
+    font-size: 32px; /*dimensione dei caratteri*/
+    font-weight: 600; /*imposta il peso del carattere ad un valore maggiore (testo in grassetto(*/
+    line-height: 42px; /*specifica l'altezza di linea del testo. La spaziatura tra due linee di testo successivo*/
+    text-transform: uppercase; /*serve a cambiare gli attributi del testo relativamente a tre aspetti: maiuscolo, miniscolo, prima lettera maiuscola*/
+    margin-right: 64px; /*definisce la distanza tra il lato destro di un elemento e gli elementi adiacenti*/
+  }
+  
+  .menu ul {
+    list-style-type: none; /*definisce l'aspetto del marcatore. si applica agli elementi li e a quelli per i quali si imposti la proprietá display sul valore list-item*/
+    display: flex; /*é il valore della proprietá display con cui si imposta un contenitore flessibile*/
+  }
+  
+  .menu ul li {
+    margin-right: 24px; /*definisce la distanza tra il lato destro di un elemento e gli elementi adiacenti*/
+  }
+  
+  .menu ul li a {
+    font-size: 24px; /*dimensione dei caratteri*/
+  }
+  
+  .works-menu ul {
+    list-style-type: none; /*definisce l'aspetto del marcatore. si applica agli elementi li e a quelli per i quali si imposti la proprietá display sul valore list-item*/
+    display: flex; /*é il valore della proprietá display con cui si imposta un contenitore flessibile*/
+  }
+  
+  .works-menu ul li {
+    margin-right: 24px; /*definisce la distanza tra il lato destro di un elemento e gli elementi adiacenti*/
+  }
+  
+  .works {
+  }
+  
+  .works-item {
+    margin-bottom: 96px; /*Definisce la distanza tra il lato inferiore di un elemento e gli elementi adiacenti. Si applica a tutti gli elementi e non è ereditata.*/
+  }
+  
+  .works-item-tags {
+    font-size: 24px; /*dimensione dei caratteri*/
+    color: #beda10; /*si applica a tutti gli elementi ed é ereditata. Significa che se si imposta il colore per un elemento esso sará ereditato da tutti gli elementi discendenti*/
+  }
+  
+  .work-info {
+    display: flex; /*é il valore della proprietá display con cui si imposta un contenitore flessibile*/
+  }
+  
+  
+  .work-info-label {
+    width: 200px; /*definisce la larghezza dell'area del contenuto di un box*/
+    flex-grow: 0; /*La proprietà flex grow consente di impostare il fattore di ingrandimento , cioè rende semplicemente più grande un box contenitore rispetto ad un altro nel contenitore padre*/
+    flex-shrink: 1; /*La proprietà flex shrink consente di impostare il fattore di riduzione, cioè rendere semplicemente più piccolo un box contenitore rispetto ad un altro o ad altri presenti nel contenitore padre*/
+    font-weight: 600; /*imposta il peso del carattere ad un valore maggiore (testo in grassetto(*/
+    text-transform: uppercase; /*serve a cambiare gli attributi del testo relativamente a tre aspetti: maiuscolo, miniscolo, prima lettera maiuscola*/
+    margin-bottom: 16px; /*Definisce la distanza tra il lato inferiore di un elemento e gli elementi adiacenti. Si applica a tutti gli elementi e non è ereditata.*/
+  }
+  
+  .work-info-content {
+    width: 70%; /*definisce la larghezza dell'area del contenuto di un box*/
+    flex-grow: 1; /*La proprietà flex grow consente di impostare il fattore di ingrandimento , cioè rende semplicemente più grande un box contenitore rispetto ad un altro nel contenitore padre*/
+    flex-shrink: 1; /*La proprietà flex shrink consente di impostare il fattore di riduzione, cioè rendere semplicemente più piccolo un box contenitore rispetto ad un altro o ad altri presenti nel contenitore padre*/
+  }
+  
+  .images img {
+    display: flex; /*é il valore della proprietá display con cui si imposta un contenitore flessibile*/
+    flex-direction: column; /*La proprietà flex direction consente di specificare la direzione dell’asse principale dove si dispongono i vari box flessibili nel contenitore genitore, consente cioè di disporre gli elementi orizzontalmente oppure verticalmente*/
+    align-items: center; /*La proprietà align items serve ad allineare i box flessibili sull’asse y se il contenitore ha impostato la proprietà flex-direction: row, altrimenti se ha impostato column allinea i box sull’asse x*/
+    margin-bottom: 36px; /*Definisce la distanza tra il lato inferiore di un elemento e gli elementi adiacenti. Si applica a tutti gli elementi e non è ereditata.*/
+  }
+  
+  .image-right {
+    position: relative; /*L'elemento viene posizionato relativamente al suo box contenitore.In pratica, con il posizionamento relativo (position: relative;), si va a modificare la posizione naturale di un elemento traslandola attraverso l'uso di top, left, bottom o right*/
+    left: 200px; /*per gli elementi con posizione assoluta o fissa definisce la distanza dal bordo sinistro del box contenitore*/
+  }
+
+  .image-right1 {
+    position: relative; /*L'elemento viene posizionato relativamente al suo box contenitore.In pratica, con il posizionamento relativo (position: relative;), si va a modificare la posizione naturale di un elemento traslandola attraverso l'uso di top, left, bottom o right*/
+    left: 100px;
+  }
+  
+  .image-left {
+    position: relative; /*L'elemento viene posizionato relativamente al suo box contenitore.In pratica, con il posizionamento relativo (position: relative;), si va a modificare la posizione naturale di un elemento traslandola attraverso l'uso di top, left, bottom o right*/
+    right: 100px; /*per gli elementi con posizione assoluta o fissa definisce la distanza dal bordo destro del box contenitore*/
+  }
+
+  .image-left1 {
+    position: relative; /*L'elemento viene posizionato relativamente al suo box contenitore.In pratica, con il posizionamento relativo (position: relative;), si va a modificare la posizione naturale di un elemento traslandola attraverso l'uso di top, left, bottom o right*/
+    right: 70px; /*per gli elementi con posizione assoluta o fissa definisce la distanza dal bordo destro del box contenitore*/
+  }
+
+  .contacts {
+
+  }
+
+  .contacts-content {
+    display: flex; /*é il valore della proprietá display con cui si imposta un contenitore flessibile*/
+    justify-content: space-between; /*La proprietà justify content serve ad allineare i box flessibili sull’asse principale del contenitore, cioè l’asse x se la flex-direction è row, altrimenti l’asse delle y*/
+  }
+  
+  .contacts-about, 
+  .contacts-form {
+    width: 40%; /*definisce la larghezza dell'area del contenuto di un box*/
+    flex-grow: 0; /*La proprietà flex grow consente di impostare il fattore di ingrandimento , cioè rende semplicemente più grande un box contenitore rispetto ad un altro nel contenitore padre*/
+    flex-shrink: 1; /*La proprietà flex shrink consente di impostare il fattore di riduzione, cioè rendere semplicemente più piccolo un box contenitore rispetto ad un altro o ad altri presenti nel contenitore padre*/
+  }

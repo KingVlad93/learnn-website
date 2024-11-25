@@ -1,0 +1,25 @@
+p {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 20px; 
+    font-weight: 400; 
+    
+    text-decoration: underline;
+    text-align: center; 
+
+    line-height: 2;
+    text-transform: uppercase; 
+}
+
+h2 {
+    font-size: 40px;
+}
+
+
+
+/*font-family - tipo di carattere
+  font-size - dimensione del carattere
+  font-weight - per definire la grandezza del carattere
+  line-height - specifica l'altezza del testo e definisce l'interlinea (lo spazio tra due linee 
+  di testo)
+  text-transform - serve acambiare gli attributi del testo in questi tre aspetti:
+  maiuscolo, minuscolo, prima lettera maiuscola

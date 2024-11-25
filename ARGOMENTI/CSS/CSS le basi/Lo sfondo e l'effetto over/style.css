@@ -1,0 +1,21 @@
+button {
+    background-color: darkcyan;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+.cta {
+    background-color: firebrick;
+}
+
+.cta:hover {
+    background-color: forestgreen;
+}
+
+
+
+
+/*con la pseudoclasse .hover, possiamo modificare un bottone (ad esempio)
+  facendogli cmabiare colore o altro quando passiamo il mouse sopra

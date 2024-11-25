@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 500px;
+  height: 300px;
+  background-color: burlywood;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 3px solid black;
+}
+
+.item {
+  flex-basis: 250px;
+  border: 1px solid white;
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pink {
+  background-color: pink;
+  align-self: flex-start;
+}
+
+.green {
+  background-color: greenyellow;
+  align-self: stretch;
+  order: 20;
+}
+
+.blue {
+  background-color: blue;
+  flex-shrink: 0;
+  order: 5;
+}
+
+.orange {
+  background-color: orange;
+  align-self: flex-end;
+  order: 10;
+}
+
+/*flexbox (contenitore flessibile)*/
